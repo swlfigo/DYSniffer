@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CCBE854277F61CD003560E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBE853277F61CD003560E4 /* UIKit.framework */; };
+		2CCBE856277F61CD003560E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBE855277F61CD003560E4 /* Foundation.framework */; };
+		2CCBE858277F61CD003560E4 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBE857277F61CD003560E4 /* CydiaSubstrate.framework */; };
+		2CCBE861277F61CD003560E4 /* testTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBE860277F61CD003560E4 /* testTweak.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CCBE850277F61CD003560E4 /* testTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = testTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCBE853277F61CD003560E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CCBE855277F61CD003560E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CCBE857277F61CD003560E4 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		2CCBE85C277F61CD003560E4 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		2CCBE85E277F61CD003560E4 /* testTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "testTweak-Prefix.pch"; path = "../testTweak-Prefix.pch"; sourceTree = "<group>"; };
+		2CCBE85F277F61CD003560E4 /* testTweak.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = testTweak.xm; sourceTree = "<group>"; };
+		2CCBE860277F61CD003560E4 /* testTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testTweak.mm; sourceTree = "<group>"; };
+		2CCBE865277F61CD003560E4 /* testTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testTweak.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CCBE84C277F61CD003560E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCBE854277F61CD003560E4 /* UIKit.framework in Frameworks */,
+				2CCBE856277F61CD003560E4 /* Foundation.framework in Frameworks */,
+				2CCBE858277F61CD003560E4 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C9BFADE27800059006DF7DA /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BFADF27800059006DF7DA /* Preference */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		2C9BFADF27800059006DF7DA /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BFAE027800059006DF7DA /* testTweak */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		2C9BFAE027800059006DF7DA /* testTweak */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = testTweak;
+			sourceTree = "<group>";
+		};
+		2CCBE845277F61CD003560E4 = {
+			isa = PBXGroup;
+			children = (
+				2CCBE859277F61CD003560E4 /* testTweak */,
+				2CCBE852277F61CD003560E4 /* Frameworks */,
+				2CCBE851277F61CD003560E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CCBE851277F61CD003560E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE850277F61CD003560E4 /* testTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CCBE852277F61CD003560E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE853277F61CD003560E4 /* UIKit.framework */,
+				2CCBE855277F61CD003560E4 /* Foundation.framework */,
+				2CCBE857277F61CD003560E4 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CCBE859277F61CD003560E4 /* testTweak */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE85F277F61CD003560E4 /* testTweak.xm */,
+				2CCBE860277F61CD003560E4 /* testTweak.mm */,
+				2CCBE85A277F61CD003560E4 /* Package */,
+				2CCBE85D277F61CD003560E4 /* Supporting Files */,
+			);
+			path = testTweak;
+			sourceTree = "<group>";
+		};
+		2CCBE85A277F61CD003560E4 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE85B277F61CD003560E4 /* DEBIAN */,
+				2CCBE862277F61CD003560E4 /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		2CCBE85B277F61CD003560E4 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE85C277F61CD003560E4 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		2CCBE85D277F61CD003560E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE85E277F61CD003560E4 /* testTweak-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CCBE862277F61CD003560E4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BFADE27800059006DF7DA /* PreferenceLoader */,
+				2CCBE863277F61CD003560E4 /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2CCBE863277F61CD003560E4 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE864277F61CD003560E4 /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		2CCBE864277F61CD003560E4 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				2CCBE865277F61CD003560E4 /* testTweak.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CCBE84D277F61CD003560E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CCBE84F277F61CD003560E4 /* testTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CCBE868277F61CD003560E4 /* Build configuration list for PBXNativeTarget "testTweak" */;
+			buildPhases = (
+				2CCBE84A277F61CD003560E4 /* ShellScript */,
+				2CCBE84B277F61CD003560E4 /* Sources */,
+				2CCBE84C277F61CD003560E4 /* Frameworks */,
+				2CCBE84D277F61CD003560E4 /* Headers */,
+				2CCBE84E277F61CD003560E4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testTweak;
+			productName = testTweak;
+			productReference = 2CCBE850277F61CD003560E4 /* testTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CCBE846277F61CD003560E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2CCBE84F277F61CD003560E4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CCBE849277F61CD003560E4 /* Build configuration list for PBXProject "testTweak" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CCBE845277F61CD003560E4;
+			productRefGroup = 2CCBE851277F61CD003560E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CCBE84F277F61CD003560E4 /* testTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCBE84A277F61CD003560E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
+		};
+		2CCBE84E277F61CD003560E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CCBE84B277F61CD003560E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCBE861277F61CD003560E4 /* testTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2CCBE866277F61CD003560E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"testTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CCBE867277F61CD003560E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"testTweak\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		2CCBE869277F61CD003560E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NG779RMVC9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testTweak/testTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CCBE86A277F61CD003560E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NG779RMVC9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testTweak/testTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = localhost;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CCBE849277F61CD003560E4 /* Build configuration list for PBXProject "testTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCBE866277F61CD003560E4 /* Release */,
+				2CCBE867277F61CD003560E4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CCBE868277F61CD003560E4 /* Build configuration list for PBXNativeTarget "testTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCBE869277F61CD003560E4 /* Release */,
+				2CCBE86A277F61CD003560E4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CCBE846277F61CD003560E4 /* Project object */;
+}
